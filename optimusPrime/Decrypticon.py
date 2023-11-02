@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import sys
+
 from gmpy2 import gcd
 from Crypto.Util.number import inverse, long_to_bytes
 

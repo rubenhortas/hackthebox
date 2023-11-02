@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+
 import math
 
 strchr = lambda x: chr(x)
