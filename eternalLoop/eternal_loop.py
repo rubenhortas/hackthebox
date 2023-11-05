@@ -2,7 +2,7 @@
 
 """
 Script to solve the misc challenge "Eternal Loop" from https://app.hackthebox.com
-You can read the full walkthrough here: https://rubenhortas.github.io/posts/eternalloop-walkthrough/
+You can read the full walkthrough here: https://rubenhortas.github.io/posts/eternalloop-walkthrough
 """
 
 import os
