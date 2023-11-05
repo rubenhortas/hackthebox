@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 
+"""
+Script to solve the crypto challenge "Nuclear Sale" from https://app.hackthebox.com
+"""
+
 # Mail ciphertexts are hex strings of the same length
 
 # He is a high profile individual. His information is encrypted below -> pt ^ k

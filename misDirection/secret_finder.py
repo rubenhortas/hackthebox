@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
 
+"""
+Script to solve the misc challenge "misDIRection" from https://app.hackthebox.com
+You can read the full walkthrough here: https://rubenhortas.github.io/posts/misdirection-walkthrough/
+"""
+
 import os
 import base64
 

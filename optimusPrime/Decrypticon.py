@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 
+"""
+Script to solve the crypto challenge "Optimus Prime" from https://app.hackthebox.com
+"""
+
 import sys
 
 from gmpy2 import gcd

@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
 
+"""
+Script to solve the crypto challenge "LunaCrypt" from https://app.hackthebox.com
+You can read the full walkthrough here: https://rubenhortas.github.io/posts/lunacrypt-walkthrough/
+"""
+
 import math
 
 strchr = lambda x: chr(x)
