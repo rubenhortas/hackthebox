@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 
+"""
+Script to solve the misc challenge "RLotto" from https://app.hackthebox.com
+"""
+
 from time import time
 from random import seed, randint
 
@@ -28,9 +32,6 @@ def guess_next_numbers(start_time, lotto_numbers):
         seed(time_seed)  # random seed
 
         combination = generate_combination()
-
-    # print('seed', seed)
-    # print('combination', combination)
 
     next_combination = generate_combination()
 

@@ -21,7 +21,7 @@ def _get_integer(name):
 
     while n == 0:
         try:
-            n = int(input(f'Enter {name}: '))
+            n = int(input(f"Enter {name}: "))
         except:
             pass
 

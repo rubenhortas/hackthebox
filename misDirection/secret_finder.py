@@ -9,9 +9,9 @@ import os
 import base64
 
 if __name__ == '__main__':
-    base_dir = "secret"
+    base_dir = 'secret'
     dictionary_tmp = {}
-    b64secret = ""
+    b64secret = ''
 
     for d in os.listdir(base_dir):
         files = os.listdir(os.path.join(base_dir, d))
