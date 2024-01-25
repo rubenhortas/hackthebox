@@ -10,7 +10,7 @@ import os
 from zipfile import ZipFile
 
 
-def unzip(counter, f, files):
+def _unzip(counter, f, files):
 	print(f"{counter} {f}")
 	
 	zf = ZipFile(f)
@@ -27,18 +27,18 @@ def unzip(counter, f, files):
 			zf.extractall(pwd=bytes(zf_password, 'UTF-8'))
 		
 			counter = counter + 1
-			unzip(counter, str(zf_inner), files)
+			_unzip(counter, str(zf_inner), files)
 		else:
 			print(f"\tinner file: {zf_inner}")
 			print(f"total files: {counter}")
 
 
-def delete(files):
+def _delete(files):
 	for f in files:
 		os.remove(f)
 
 
 if __name__ == '__main__':
 	zip_files = []
-	unzip(1, '37366.zip', zip_files)
-	delete(zip_files)
+	_unzip(1, '37366.zip', zip_files)
+	_delete(zip_files)

@@ -8,7 +8,7 @@ from time import time
 from random import seed, randint
 
 
-def generate_combination():
+def _generate_combination():
     combination = []
 
     while len(combination) < 5:
@@ -20,7 +20,7 @@ def generate_combination():
     return combination
 
 
-def guess_next_numbers(start_time, lotto_numbers):
+def _guess_next_numbers(start_time, lotto_numbers):
     time_seed = start_time
     combination = []
 
@@ -31,9 +31,9 @@ def guess_next_numbers(start_time, lotto_numbers):
         # Initialize the (pseudo) random number generator
         seed(time_seed)  # random seed
 
-        combination = generate_combination()
+        combination = _generate_combination()
 
-    next_combination = generate_combination()
+    next_combination = _generate_combination()
 
     print(next_combination)
 
@@ -46,4 +46,4 @@ if __name__ == '__main__':
         print('Guessing...')
 
         now = int(time())
-        guess_next_numbers(now, numbers)
+        _guess_next_numbers(now, numbers)
