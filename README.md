@@ -4,7 +4,7 @@ Scripts I made to solve [hackthebox](https://www.hackthebox.com) (retired) chall
 
 ## Walkthroughs
 
-You can found my [hackthebox](https://www.hackthebox.com) walkthroughs in my blog, [https://rubenhortas.github.io](https://rubenhortas.github.io), in the categories [hackthebox/challenges](https://rubenhortas.github.io/categories/challenge) and [hackthebox/machine](https://rubenhortas.github.io/categories/machine).
+You can found my [hackthebox](https://www.hackthebox.com) walkthroughs in my blog, [https://rubenhortas.github.io](https://rubenhortas.github.io), in the categories [hackthebox/challenge](https://rubenhortas.github.io/categories/challenge) and [hackthebox/machine](https://rubenhortas.github.io/categories/machine).
 
 ## Support
 
