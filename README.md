@@ -1,6 +1,6 @@
 # hackthebox
 
-Scripts I made to solve [hackthebox](https://www.hackthebox.com) (retired) challenges.
+Scripts I made to solve [hackthebox](https://www.hackthebox.com) (retired) challenges and machines.
 
 ## Walkthroughs
 
