@@ -185,7 +185,7 @@ if __name__ == '__main__':
             while b'What\'s the best move?' not in buffer:
                 buffer += s.recv(1024)
 
-            # print(buffer.decode(ENCODING))  # Prit all the data sent from server
+            # print(buffer.decode(ENCODING))  # Print all the data sent from server
 
             parsed_data = buffer.split(b'\n')
             remote_board = _read_info(parsed_data)
