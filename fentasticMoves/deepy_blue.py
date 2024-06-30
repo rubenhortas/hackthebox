@@ -113,7 +113,7 @@ class Board:
         black_castling = get_color_castling(7, 'k', 'q', 'r')
 
         if white_castling or black_castling:
-            return f'{white_castling}{black_castling}'.strip()
+            return f"{white_castling}{black_castling}".strip()
         else:
             return '-'
 
@@ -150,7 +150,7 @@ def _find_best_move(fen: str) -> str:
         if stockfish.is_fen_valid(fen):
             stockfish.set_fen_position(fen)
         else:
-            print(f'[!]: Invalid fen: {fen}')
+            print(f"[!]: Invalid fen: {fen}")
 
         return stockfish.get_best_move()
     except StockfishException:
@@ -194,15 +194,15 @@ if __name__ == '__main__':
 
             best_move = _find_best_move(str(local_board))
             # print(f"[+] << {best_move}")
-            best_move_line = best_move + "\n"
+            best_move_line = best_move + '\n'
             s.sendall(bytes(best_move_line.encode(ENCODING)))
 
             result = s.recv(1024)
 
             if b'Wrong!' in result or b'Correct!' in result:
-                print(f'[+] Puzzle {puzzle_num}: {result.decode(ENCODING)}', end='')
+                print(f"[+] Puzzle {puzzle_num}: {result.decode(ENCODING)}", end='')
             else:
-                print(f'[+] {result.decode(ENCODING)}', end='')
+                print(f"[+] {result.decode(ENCODING)}", end='')
 
             if b'Wrong!' in result or b'Bye!' in result or b'flag' in result or b'slow' in result:
                 exit(0)
