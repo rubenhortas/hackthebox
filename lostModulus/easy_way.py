@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 
+"""
+Script to solve the crypto challenge "LostModulus" from https://app.hackthebox.com
+"""
+
 # Requires pycryptodome
 from Crypto.Util.number import getPrime, long_to_bytes, inverse
 
