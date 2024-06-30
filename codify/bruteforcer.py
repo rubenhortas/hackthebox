@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 
+"""
+Script to solve the machine "Codify" from https://app.hackthebox.com
+"""
+
 import signal
 import string
 import subprocess
