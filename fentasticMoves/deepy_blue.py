@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 
+"""
+Script to solve the misc challenge "FentasticMoves" from https://app.hackthebox.com
+"""
+
 import re
 import signal
 import socket
