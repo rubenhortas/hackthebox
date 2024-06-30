@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 
+"""
+Script to solve the misc challenge "m0rsarchive" from https://app.hackthebox.com
+"""
+
 import os
 import shutil
 from zipfile import ZipFile
