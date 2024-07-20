@@ -2,7 +2,8 @@
 
 """
 Script to solve the crypto challenge "LunaCrypt" from https://app.hackthebox.com
-You can read the full walkthrough here: https://rubenhortas.github.io/posts/lunacrypt-walkthrough
+
+You can read the full walkthrough here: https://rubenhortas.github.io/posts/htb-lunacrypt
 """
 
 import math

@@ -2,6 +2,8 @@
 
 """
 Script to solve the crypto challenge "LostModulus" from https://app.hackthebox.com
+
+You can read the full walkthroug here: https://rubenhortas.github.io/posts/htb-lost-modulus
 """
 
 # Requires pycryptodome

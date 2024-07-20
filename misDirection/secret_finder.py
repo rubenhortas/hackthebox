@@ -2,7 +2,8 @@
 
 """
 Script to solve the misc challenge "misDIRection" from https://app.hackthebox.com
-You can read the full walkthrough here: https://rubenhortas.github.io/posts/misdirection-walkthrough
+
+You can read the full walkthrough here: https://rubenhortas.github.io/posts/htb-misdirection
 """
 
 import os

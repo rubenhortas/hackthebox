@@ -2,6 +2,8 @@
 
 """
 Script to solve the misc challenge "FentasticMoves" from https://app.hackthebox.com
+
+You can read the full walkthrough here: https://rubenhortas.github.io/posts/htb-fentastic-moves
 """
 
 import re
