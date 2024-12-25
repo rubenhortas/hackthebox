@@ -57,14 +57,14 @@ class Board:
         for row in board:
             fen_row = []
 
-            for box in row:
-                if box == ' ':
-                    fen_row.append(box)
+            for square in row:
+                if square == ' ':
+                    fen_row.append(square)
                 else:
-                    if not self._PIECES.get(box):
-                        print(f'[D] Piece not found: [{box}]')
+                    if not self._PIECES.get(square):
+                        print(f'[D] Piece not found: [{square}]')
 
-                    fen_row.append(self._PIECES.get(box))
+                    fen_row.append(self._PIECES.get(square))
 
             self._board.append(fen_row)
 
@@ -75,20 +75,20 @@ class Board:
         # FEN notation starts from the 8th row (blacks)
         for row in self._board:
             fen_row = []
-            empty_boxes = 0
+            empty_squares = 0
 
-            for box in row:
-                if box == ' ':
-                    empty_boxes = empty_boxes + 1
+            for square in row:
+                if square == ' ':
+                    empty_squares = empty_squares + 1
                 else:
-                    if empty_boxes > 0:
-                        fen_row.append(str(empty_boxes))
-                        empty_boxes = 0
+                    if empty_squares > 0:
+                        fen_row.append(str(empty_squares))
+                        empty_squares = 0
 
-                    fen_row.append(box)
+                    fen_row.append(square)
 
-            if empty_boxes > 0:
-                fen_row.append(str(empty_boxes))
+            if empty_squares > 0:
+                fen_row.append(str(empty_squares))
 
             fen_row.append('/')
             fen_board.extend(fen_row)
@@ -141,7 +141,7 @@ def _read_info(data: list[bytes]) -> Tuple[list, str]:
         if board_row_match:
             row = board_row_match.group(1)
             # On the board each square occupies two characters
-            # Make each box occupy a single character by eliminating whitespaces
+            # Make each square occupy a single character by eliminating whitespaces
             row = row.replace('  ', '$')
             row = row.replace(' ', '')
             row = row.replace('$', ' ')
